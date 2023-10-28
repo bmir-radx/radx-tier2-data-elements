@@ -1,0 +1,40 @@
+Variable / Field Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Branching Logic (Show field only if...),Unit,CDE Reference
+sample_id,Sample,text,Unique identifier for a spiked (contrived) sample,,,,,,,,RADx-rad DCC
+sample_group,Sample,text,Unique identifier for a grouping of samples or runs,,,,,,,,RADx-rad DCC
+study_id,Identity,text,RADx-rad Study ID; Subject ID; Datavent ID,,,,,,,,RADx-rad Minimum CDE
+cohort_id,Clinical,text,Identifier for groups of patients,,,,,,,,RADx-rad DCC
+protocol_id,Technology Metadata,text,Unique name or identifier for biosensor protocol,,example: ddPCR_SARS-CoV-2,,,,,,RADx-rad DCC
+technology_platform,Technology Metadata,text,Abbreviation or short label for technology,,example: ddPCR,,,,,,RADx-rad DCC
+analyte_type,Technology Metadata,list,Type of analyte(s) or target(s) to be detected,antigen|viral RNA|virus|antibody|human IgA|human RBD IgA|human IgG|human RBD IgG|human IgM|human RBD IM| neutralizing antibody|EV RNA | VOC,example: virus,,,,,,RADx-rad DCC
+specimen_type,Assay Results,text,Specimen type used in assay,breath | hand odor | plasma | saliva | skin,example: saliva,,,,,,RADx-rad DCC
+specimen_dilution_factor,Assay Results,float,Dilution of specimen before test,,example: 10 (fold),,,,,,RADx-rad DCC
+assay_result,Assay Results,category,"Measured result. If other, specify result in assay_result_other",positive | negative | failed | lost | other,example: positive,,,,,,RADx-rad DCC
+assay_result_other,Assay Results,text,Description of other assay result,,,,,,,,RADx-rad DCC
+assay_readout,Assay Results,float,Numerical assay readout,,example: 0.7,,,,,,RADx-rad DCC
+assay_readout_unit,Assay Results,text,Unit of assay_readout,,example: F,,,,,,RADx-rad DCC
+assay_readout_description,Assay Results,text,Description of assay readout type,,example: capacitance,,,,,,RADx-rad DCC
+voc_compound_name,Results/VOC,text,Name of compound/metabolite detected,,example:  Acetone,,,,,,RADx-rad DCC|https://pubchem.ncbi.nlm.nih.gov/
+voc_compound_formula,Results/VOC,text,Chemical formula of compound,,example: C3H6O,,,,,,RADx-rad DCC
+voc_compound_inchikey,Results/VOC,text,InChIKey of compound (unique identifier for data linking),,example: CSCPPACGZOOCGX-UHFFFAOYSA-N,,,,,,RADx-rad DCC|https://pubchem.ncbi.nlm.nih.gov/|https://iupac.org/who-we-are/divisions/division-details/inchi/
+voc_compound_concentration,Results/VOC,float,Concentation of compound,,,,,,,nmol/L,RADx-rad DCC
+voc_compound_retention_time,Results/VOC,float,Retention time for a specific compound,,,,,,,,RADx-rad DCC
+voc_compound_retention_time_unit,Results/VOC,float,Unit of voc compound retention time,,example: s,,,,,,RADx-rad DCC
+voc_compound_secondary_retention_time,Results/VOC,float,Retention time for the second peak used if applicable,,,,,,,,RADx-rad DCC
+voc_compound_retention_time_description,Results/VOC,text,Decription of retention times used in calculation of data (one peak or two peaks),,,,,,,,RADx-rad DCC
+voc_compound_detail,Results/VOC,text,Comments about the detection of compound,,example: probable compound based on retention time,,,,,,RADx-rad DCC
+voc_relative_abundance,Results/VOC,float,The relative abundance of a VOC in a sample.,,,,,,,,RADx-rad DCC
+voc_abundance_ratio_ir,Results/VOC,float,Ratio of peak area of listed analyte to peak area of listed internal reference,,,,,,,,RADx-rad DCC
+internal_reference,Results/VOC,text,Specific internal reference used for peak area ratios,,,,,,,,RADx-rad DCC
+internal_reference_description,Results/VOC,text,Description of internal reference used,,,,,,,,RADx-rad DCC
+peak_id,Results/VOC,text,Unique identifer for the peak in a mass spectrum defined by the mass and retention time.,,example: peak_1,,,,,,RADx-rad DCC
+peak_mass,Results/VOC,float,The most probable mass of the peak after the identification or mass-to-charge ratio (m/z) when not identified.,,g/mol when peak identified  and m/z when peak not identified . Example: 57.1,,,,,m/z,RADx-rad DCC
+peak_mass_unit,Results/VOC,text,Unit of peak_mass,,example: m/z,,,,,,RADx-rad DCC
+peak_retention_time,Results/VOC,float,The measure of time taken for a peak to pass through a chromatography column.,,example: 22.1,,,,,,RADx-rad DCC
+peak_retention_time_unit,Results/VOC,text,Unit of peak_retention_time,,example: min,,,,,,RADx-rad DCC
+retention_time,Results/VOC,float,Retention time (no peak),,,,,,,,RADx-rad DCC
+retention_time_unit,Results/VOC,text,Unit of retention_time,,example: s,,,,,,RADx-rad DCC
+signal_intensity,Results/VOC,float,Measured signal intensity,,example: signal intensity in a chromatogram,,,,,,RADx-rad DCC
+gc_amplitude,Results/VOC,float,The signal generated from the ionization of VOC seprated compounds,,,,,,,,RADx-rad DCC
+gc_amplitude_unit,Results/VOC,text,Unit of gc_amplitude,,,,,,,,RADx-rad DCC
+gc_elution_time,Results/VOC,float,The time needed for a certain compound to pass through the GC column,,,,,,,,RADx-rad DCC
+gc_elution_time_unit,Results/VOC,text,Unit of gc_elution_time,,,,,,,,RADx-rad DCC
