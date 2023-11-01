@@ -1,1 +1,0 @@
-We recieved RADxUP_1.7_Phase3_Tier1_Tier2_DataDictionary-1 (2).csv from Emily from RADx-UP.  This is what she said:  Here is our most recent data dictionary, PDF and CSV. Any variables with "_2", "_3", etc. are just new versions of the CDE with things like added answer options or rewordings.
